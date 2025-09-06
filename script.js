@@ -40,4 +40,5 @@ function equall(){
     }
 
     result.textContent = x;
+
 }
