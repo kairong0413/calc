@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html>
     <header>
         <meta charset="UTF-8">
@@ -7,51 +6,46 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>simple calculator</title>
         <style>
-            *{
+            * {
                 font-size: 2rem;
                 text-align: center;
                 font-family: 'Times New Roman', Times, serif;
             }
 
-            input{
-                width: 100px;
-                margin-right: 10    0px;
-
+            input {
+                width: 20%;   
+                margin-right: 5%;
             }
-            button{
-                border-radius: 10px;
+
+            button {
+                border-radius: 5%;  
                 font-size: 1.5rem;
-                margin-bottom: 15px;
-                color:whitesmoke;
-                width: 170px;
-                height: 100px;
-                background-color:gold;
-                margin-left:50px;
-                margin-right: 50px;
-                
+                margin-bottom: 2%;   
+                color: whitesmoke;
+                width: 35%;  
+                height: 15%; 
+                background-color: gold;
+                margin-left: 5%;
+                margin-right: 5%;
             }
 
-            h1{
-                margin-bottom: 20px;
+            h1 {
+                margin-bottom: 3%; 
                 text-align: center;
                 font-family: 'Times New Roman', Times, serif;
                 font-size: 2rem;
                 font-weight: bold;
-                color:darkgoldenrod;
-            }
-            #symbol{
-                margin-left: 50px;
-                margin-right:50px;
-            }
-            #equal{
-                margin-left: 50px;
-                margin-right:50px;
-            }
-            #btn{
-                margin-top: 50px;
+                color: darkgoldenrod;
             }
 
-           
+            #symbol, #equal {
+                margin-left: 5%;
+                margin-right: 5%;
+            }
+
+            #btn {
+                margin-top: 5%;
+            }
         </style>
     </header>
     <body>
@@ -61,10 +55,20 @@
         <span><input id="second"></input>
             <span id="equal">=</span>
         <span><output id="result"></output></span></span>
-        <div id="btn"><button id="plus" onclick="pluss()">plus</button><span><button id="minus" onclick="minuss()">minus</button></span></div>
-        <div id="btn"><button id="times" onclick="timess()">times</button><span><button id="div" onclick="divv()">div</button></span></div>
-        <div id="equal" onclick="equall()"><button>=</button></div>
-        <script src="script.js"></script>
-    </body>
 
+        <div id="btn">
+            <button id="plus" onclick="pluss()">plus</button>
+            <span><button id="minus" onclick="minuss()">minus</button></span>
+        </div>
+
+        <div id="btn">
+            <button id="times" onclick="timess()">times</button>
+            <span><button id="div" onclick="divv()">div</button></span>
+        </div>
+
+        <div id="equal" onclick="equall()"><button>=</button></div>
+
+        <script src="calc.js"></script>
+    </body>
 </html>
+
